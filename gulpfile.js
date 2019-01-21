@@ -32,12 +32,12 @@ gulp.task('browser-sync', ['styles'], function () {
   // THIS IS FOR SITUATIONS WHEN YOU HAVE ANOTHER SERVER RUNNING
   browserSync.init({
     proxy: {
-      target: 'localhost:3333', // can be [virtual host, sub-directory, localhost with port]
+      target: 'http://localhost:3333', // can be [virtual host, sub-directory, localhost with port]
       ws: true // enables websockets
     },
-      notify: false,
-      open: false,
-      serveStatic: ['.', './public']
+    notify: false,
+    open: false,
+    serveStatic: ['.', './public']
   })
 
   // browserSync.init({
