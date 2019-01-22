@@ -2,5 +2,18 @@
 @import "reset";
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right, rgba(132,162,233,1) 0%, rgba(223,254,233,1) 100%);
+}
+
+.app-container {
+  width: 100%;
+  max-width: 1300px;
+  background: #fff;
+  min-height: calc(100vh - 15vh);
+  border-radius: 5px;
 }
